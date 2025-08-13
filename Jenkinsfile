@@ -10,12 +10,6 @@ pipeline{
                     reuseNode true
                 }
             }
-            // this is single line commend
-            /*
-            this
-            is multi line
-            comment
-            */
             steps {
                 sh '''
 
@@ -36,7 +30,6 @@ pipeline{
                 }
             }
             steps{
-                echo 'Test stage'
                 sh '''
                     test -f build/index.html
                     npm test
